@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -14,9 +15,14 @@ using System.Windows.Shapes;
 
 namespace SystemProgramming
 {
-    /// <summary>
-    /// Логика взаимодействия для Task3.xaml
-    /// </summary>
+    [DllImport("kernel32.dll", SetLastError=true)]
+    private static extern bool Beep(uint dwFreq, uint dwDuration);
+
+
+    [DllImport("user32.dll")]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    static extern bool MessageBeep(uint uType);
+
     public partial class Task3 : Window
     {
         public Task3()
