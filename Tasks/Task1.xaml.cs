@@ -26,9 +26,9 @@ namespace SystemProgramming
             Process process = new Process();
             process.StartInfo.FileName = "calc.exe";
             process.Start();
-            StartProc.Content = "Процес розпочато!";
+            StartProc.Content = "Process has started!";
             process.WaitForExit();
-            StartProc.Content = $"Процес завершився з кодом: {process.ExitCode}";
+            StartProc.Content = $"Process ended with code: {process.ExitCode}";
         }
     }
 }

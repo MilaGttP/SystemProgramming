@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Task2" Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="#212121">
     <Grid>
-        
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="Wait" Content="Wait for exit" Width="150" Height="30" Margin="10" Click="Wait_Click"/>
+            <Button x:Name="Kill" Content="Kill proc" Width="150" Height="30" Margin="10" Click="Kill_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
