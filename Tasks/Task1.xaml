@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Task1" Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="#212121">
     <Grid>
-        <Button x:Name="StartProc" Content="Start child process" HorizontalAlignment="Left" VerticalAlignment="Top" 
-                Margin="20" Width="250" Height="30" Click="StartProc_Click"/>
+        
     </Grid>
 </Window>
