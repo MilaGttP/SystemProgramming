@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SystemProgramming"
         mc:Ignorable="d"
-        Title="Task2" Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="#212121">
+        Title="Task2" Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="#212121" Closing="Window_Closing">
     <Grid>
-        
+        <TextBox x:Name="CaptionTB" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="20" 
+                 Width="200" Height="25" KeyDown="CaptionTB_KeyDown">
+            
+        </TextBox>
     </Grid>
 </Window>
