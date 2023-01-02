@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,14 +15,20 @@ using System.Windows.Shapes;
 
 namespace SystemProgramming
 {
-    /// <summary>
-    /// Логика взаимодействия для Task1.xaml
-    /// </summary>
     public partial class Task1 : Window
     {
         public Task1()
         {
             InitializeComponent();
+        }
+        private void StartProc_Click(object sender, RoutedEventArgs e)
+        {
+            Process process = new Process();
+            process.StartInfo.FileName = "calc.exe";
+            process.Start();
+            StartProc.Content = "Процес розпочато!";
+            process.WaitForExit();
+            StartProc.Content = $"Процес завершився з кодом: {process.ExitCode}";
         }
     }
 }
