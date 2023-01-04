@@ -40,7 +40,7 @@ namespace SystemProgramming
             process.Start();
             MessageBox.Show("Process has started!");
             Thread.Sleep(1000);
-            process.Kill();
+            process.CloseMainWindow();
         }
     }
 }
