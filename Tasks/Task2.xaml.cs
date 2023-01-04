@@ -41,6 +41,7 @@ namespace SystemProgramming
             MessageBox.Show("Process has started!");
             Thread.Sleep(1000);
             process.CloseMainWindow();
+            process.Close();
         }
     }
 }
