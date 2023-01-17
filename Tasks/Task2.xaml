@@ -14,7 +14,10 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Orientation="Vertical" Background="#313131">
+            <Button x:Name="StartBtn" Content="Start" Foreground="Azure" Margin="0 20 0 0" Style="{StaticResource MaterialDesignFlatButton}" Click="StartBtn_Click"/>
         </StackPanel>
+
+        <DataGrid x:Name="DG" Grid.Column="1" Foreground="Azure" Style="{StaticResource MaterialDesignDataGrid}"/>
 
     </Grid>
 </UserControl>
