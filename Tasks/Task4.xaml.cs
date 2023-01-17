@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace SystemProgramming
 {
-    /// <summary>
-    /// Логика взаимодействия для Task4.xaml
-    /// </summary>
     public partial class Task4 : UserControl
     {
         public Task4()
