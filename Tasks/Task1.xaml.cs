@@ -33,10 +33,7 @@ namespace SystemProgramming
                 numbers.Add(r.Next(10));
                 --i;
             }
-            foreach (var item in numbers)
-            {
-                MessageBox.Show(item.ToString());
-            }
+            foreach (var item in numbers) MessageBox.Show(item.ToString());
         }
 
         private void StartBtn_Click(object sender, RoutedEventArgs e)
