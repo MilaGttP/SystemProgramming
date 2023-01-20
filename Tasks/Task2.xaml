@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="Task2" Height="850" Width="1450" WindowStartupLocation="CenterScreen" Background="#212121">
     <Grid>
-        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.8*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.RowSpan="2" Orientation="Vertical" Background="#323232" >
+                <Button x:Name="StartBtn" Content="Start" Foreground="Azure" Margin="0 20 0 0" Click="StartBtn_Click"/>
+            </StackPanel>
+
+            <TextBlock x:Name="CountTB" Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}" Margin="100 50 100 350" Foreground="Azure" FontSize="18"/>
+            <TextBlock x:Name="SequenceTB" Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}" Margin="100 350 100 50" Foreground="Azure" FontSize="18"/>
+
+        </Grid>
     </Grid>
 </Window>
