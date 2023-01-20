@@ -14,14 +14,21 @@ using System.Windows.Shapes;
 
 namespace SystemProgramming
 {
-    /// <summary>
-    /// Логика взаимодействия для Task1.xaml
-    /// </summary>
     public partial class Task1 : Window
     {
+        List<int> source;
         public Task1()
         {
             InitializeComponent();
+            source = new List<int>();
+            Random random = new Random();
+            for (int i = 0; i < 100; i++) source.Add(random.Next(0, 50));
+        }
+
+        private void StartBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var count = (from n in source select n).AsParallel().Distinct().Count();
+            ResultTB.Text = count.ToString();
         }
     }
 }

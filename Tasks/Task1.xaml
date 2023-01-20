@@ -4,9 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SystemProgramming"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Task1" Height="850" Width="1450" WindowStartupLocation="CenterScreen" Background="#212121">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.8*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.RowSpan="2" Orientation="Vertical" Background="#323232" >
+            <Button x:Name="StartBtn" Content="Start" Foreground="Azure" Margin="0 20 0 0" Click="StartBtn_Click"/>
+        </StackPanel>
+
+        <TextBlock x:Name="ResultTB" Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}" Margin="100 100 100 100" Foreground="Azure" FontSize="18"/>
+
     </Grid>
 </Window>
