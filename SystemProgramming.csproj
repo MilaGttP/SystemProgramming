@@ -7,4 +7,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AssemblyLoadLibrary\AssemblyLoadLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
